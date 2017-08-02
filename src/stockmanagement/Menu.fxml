@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="640.0" prefWidth="1200.0" stylesheets="@../tools/custom.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="35.0" prefWidth="183.0" text="Record Widgets">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutY="55.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <VBox layoutX="35.0" layoutY="80.0" prefHeight="550.0" prefWidth="1140.0" spacing="50.0">
+         <children>
+            <HBox prefHeight="130.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="270.0" style="-fx-border-image-width: 2px; -fx-background-color: #a1e2c3; -fx-border-color: #13683f; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);">
+                     <children>
+                        <Pane prefHeight="130.0" prefWidth="92.0" style="-fx-background-color: #13683f;" />
+                        <VBox layoutX="103.0" layoutY="27.0" prefHeight="76.0" prefWidth="151.0">
+                           <children>
+                              <Label prefHeight="41.0" prefWidth="151.0" text="Total Daily Sales">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font></Label>
+                              <Label fx:id="lblDailySales" prefHeight="46.0" prefWidth="151.0">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font></Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="200.0" prefWidth="270.0" style="-fx-border-image-width: 2px; -fx-border-color: #102982; -fx-background-color: #b6c5f9; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);">
+                     <children>
+                        <Pane prefHeight="130.0" prefWidth="92.0" style="-fx-background-color: #102982;" />
+                        <VBox layoutX="103.0" layoutY="27.0" prefHeight="76.0" prefWidth="151.0">
+                           <children>
+                              <Label prefHeight="41.0" prefWidth="151.0" text="Credit Daily Sales">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font></Label>
+                              <Label fx:id="lblCreditDailySales" prefHeight="46.0" prefWidth="151.0">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font></Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="200.0" prefWidth="270.0" style="-fx-border-image-width: 2px; -fx-border-color: red; -fx-background-color: #ffe5e9; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);">
+                     <children>
+                        <Pane prefHeight="130.0" prefWidth="92.0" style="-fx-background-color: red;" />
+                        <VBox layoutX="103.0" layoutY="27.0" prefHeight="76.0" prefWidth="164.0">
+                           <children>
+                              <Label prefHeight="36.0" prefWidth="164.0" text="Daily Sales - Credit">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font></Label>
+                              <Label fx:id="lblDailySalesProfit" prefHeight="46.0" prefWidth="151.0">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font></Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="200.0" prefWidth="270.0" style="-fx-border-image-width: 2px; -fx-border-color: #68430c; -fx-background-color: #f2d6ae; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);">
+                     <children>
+                        <Pane prefHeight="130.0" prefWidth="92.0" style="-fx-background-color: #68430c;" />
+                        <VBox layoutX="103.0" layoutY="27.0" prefHeight="76.0" prefWidth="151.0">
+                           <children>
+                              <Label prefHeight="41.0" prefWidth="151.0" text="SALES">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font></Label>
+                              <Label fx:id="lblYearlySales" prefHeight="46.0" prefWidth="151.0">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font></Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <HBox prefHeight="130.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="270.0" style="-fx-border-image-width: 2px; -fx-border-color: #13683f; -fx-background-color: #a1e2c3; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);">
+                     <children>
+                        <Pane prefHeight="130.0" prefWidth="92.0" style="-fx-background-color: #13683f;" />
+                        <VBox layoutX="103.0" layoutY="27.0" prefHeight="76.0" prefWidth="151.0">
+                           <children>
+                              <Label prefHeight="41.0" prefWidth="151.0" text="Total Daily Purchase">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font></Label>
+                              <Label fx:id="lblDailyPurchase" prefHeight="46.0" prefWidth="151.0">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font></Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="200.0" prefWidth="270.0" style="-fx-border-image-width: 2px; -fx-border-color: #102982; -fx-background-color: #b6c5f9; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);">
+                     <children>
+                        <Pane prefHeight="130.0" prefWidth="92.0" style="-fx-background-color: #102982;" />
+                        <VBox layoutX="103.0" layoutY="27.0" prefHeight="76.0" prefWidth="151.0">
+                           <children>
+                              <Label prefHeight="41.0" prefWidth="151.0" text="Daily Credit Purchase">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font></Label>
+                              <Label fx:id="lblCreditDailyPurchase" prefHeight="46.0" prefWidth="151.0">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font></Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="200.0" prefWidth="270.0" style="-fx-border-image-width: 2px; -fx-border-color: red; -fx-background-color: #ffe5e9; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);">
+                     <children>
+                        <Pane prefHeight="130.0" prefWidth="92.0" style="-fx-background-color: red;" />
+                        <VBox layoutX="103.0" layoutY="27.0" prefHeight="76.0" prefWidth="151.0">
+                           <children>
+                              <Label prefHeight="41.0" prefWidth="151.0" text="Daily Purchase - Credit">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font></Label>
+                              <Label fx:id="lblDailyPurchaseBal" prefHeight="46.0" prefWidth="151.0">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font></Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="200.0" prefWidth="270.0" style="-fx-border-image-width: 2px; -fx-border-color: #68430c; -fx-background-color: #f2d6ae; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);">
+                     <children>
+                        <Pane prefHeight="130.0" prefWidth="92.0" style="-fx-background-color: #68430c;" />
+                        <VBox layoutX="103.0" layoutY="27.0" prefHeight="76.0" prefWidth="151.0">
+                           <children>
+                              <Label prefHeight="41.0" prefWidth="151.0" text="PURCHASES">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font></Label>
+                              <Label fx:id="lblYearlyPurchase" prefHeight="46.0" prefWidth="151.0">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font></Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <HBox prefHeight="130.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="270.0" style="-fx-border-image-width: 2px; -fx-border-color: #13683f; -fx-background-color: #a1e2c3; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);">
+                     <children>
+                        <Pane prefHeight="130.0" prefWidth="92.0" style="-fx-background-color: #13683f;" />
+                        <VBox layoutX="103.0" layoutY="27.0" prefHeight="76.0" prefWidth="151.0">
+                           <children>
+                              <Label prefHeight="41.0" prefWidth="151.0" text="Weekly Sales">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font></Label>
+                              <Label prefHeight="46.0" prefWidth="151.0" text="\$12,000">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font></Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="200.0" prefWidth="270.0" style="-fx-border-image-width: 2px; -fx-border-color: #102982; -fx-background-color: #b6c5f9; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);">
+                     <children>
+                        <Pane prefHeight="130.0" prefWidth="92.0" style="-fx-background-color: #102982;" />
+                        <VBox layoutX="103.0" layoutY="27.0" prefHeight="76.0" prefWidth="151.0">
+                           <children>
+                              <Label prefHeight="41.0" prefWidth="151.0" text="Weekly Purchase">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font></Label>
+                              <Label prefHeight="46.0" prefWidth="151.0" text="\$12,000">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font></Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="200.0" prefWidth="270.0" style="-fx-border-image-width: 2px; -fx-border-color: red; -fx-background-color: #ffe5e9; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);">
+                     <children>
+                        <Pane prefHeight="130.0" prefWidth="92.0" style="-fx-background-color: red;" />
+                        <VBox layoutX="103.0" layoutY="27.0" prefHeight="76.0" prefWidth="164.0">
+                           <children>
+                              <Label prefHeight="36.0" prefWidth="166.0" text="Net Expenditure">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font></Label>
+                              <Label prefHeight="46.0" prefWidth="151.0" text="\$12,000">
+                                 <font>
+                                    <Font name="System Bold" size="22.0" />
+                                 </font></Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="200.0" prefWidth="270.0" style="-fx-border-image-width: 2px; -fx-border-color: #68430c; -fx-background-color: #f2d6ae; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);">
+                     <children>
+                        <Pane prefHeight="130.0" prefWidth="92.0" style="-fx-background-color: #68430c;" />
+                        <VBox layoutX="103.0" layoutY="27.0" prefHeight="76.0" prefWidth="151.0">
+                           <children>
+                              <Label prefHeight="41.0" prefWidth="151.0" text="Net Profit">
+                                 <font>
+                                    <Font name="System Bold" size="22.0" />
+                                 </font></Label>
+                              <Label prefHeight="46.0" prefWidth="151.0" text="\$12,000">
+                                 <font>
+                                    <Font name="System Bold" size="22.0" />
+                                 </font></Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,11 @@
+.root{}
+
+.nav-button:hover{
+    -fx-background-color:#222D32;
+}
+.nav-button {
+    -fx-background-color:#2A3F54;
+}
+.nav-button:pressed {
+    -fx-background-color:#2A3F54;
+}

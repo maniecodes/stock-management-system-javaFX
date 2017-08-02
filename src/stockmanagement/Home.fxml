@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="558.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeController">
+   <children>
+      <JFXToolbar prefHeight="40.0" style="-fx-background-color: #222D32;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <Label prefHeight="27.0" prefWidth="183.0" text="STOCK DASHBOARD" textFill="#eeebeb" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </left>
+      </JFXToolbar>
+      <VBox layoutY="40.0" prefHeight="519.0" prefWidth="140.0" style="-fx-background-color: #2A3F54;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="60.0" prefWidth="139.0" style="-fx-border-width: 0 0 2 0; -fx-border-color: #7387A8;" text="NAVIGATION" textFill="#d0d0d0" />
+            <JFXButton fx:id="btnHome" onAction="#homeClick" prefHeight="50.0" prefWidth="140.0" style="-fx-border-width: 2px; -fx-border-color: white;" text="Home" textFill="#d0d0d0" />
+            <JFXButton fx:id="btnProduct" onAction="#productClick" prefHeight="50.0" prefWidth="140.0" style="-fx-border-width: 2px; -fx-border-color: white;" text="Product" textFill="#d0d0d0" />
+            <JFXButton fx:id="btnSupplier" onAction="#supplierClick" prefHeight="50.0" prefWidth="140.0" style="-fx-border-width: 2px; -fx-border-color: white;" text="Supplier" textFill="#d0d0d0" />
+            <JFXButton fx:id="btnStock" onAction="#stockClick" prefHeight="50.0" prefWidth="140.0" style="-fx-border-width: 2px; -fx-border-color: white;" text="Stock" textFill="#d0d0d0" />
+            <JFXButton fx:id="btnCustomer" onAction="#customerClick" prefHeight="50.0" prefWidth="140.0" style="-fx-border-width: 2px; -fx-border-color: white;" text="Customer" textFill="#d0d0d0" />
+            <JFXButton fx:id="btnSales" onAction="#salesClick" prefHeight="50.0" prefWidth="140.0" style="-fx-border-width: 2px; -fx-border-color: white;" text="Sales" textFill="#d0d0d0" />
+            <JFXButton fx:id="btnPurchase" onAction="#purchaseClick" prefHeight="50.0" prefWidth="140.0" style="-fx-border-width: 2px; -fx-border-color: white;" text="Purchase" textFill="#d0d0d0" />
+            <JFXButton prefHeight="50.0" prefWidth="140.0" style="-fx-border-width: 2px; -fx-border-color: white;" text="Views" />
+         </children>
+      </VBox>
+      <AnchorPane fx:id="holderPane" layoutX="140.0" layoutY="40.0" prefHeight="519.0" prefWidth="820.0" />
+   </children>
+</AnchorPane>

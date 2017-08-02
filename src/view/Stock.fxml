@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="640.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StockController">
+   <children>
+      <SplitPane dividerPositions="0.29465776293823037" prefHeight="640.0" prefWidth="1200.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <AnchorPane layoutX="-1.0" prefHeight="633.0" prefWidth="343.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label layoutX="60.0" layoutY="6.0" prefHeight="41.0" prefWidth="186.0" text="STOCK REGISTRATION DETAILS" />
+                        <Separator layoutX="8.0" layoutY="57.0" prefHeight="4.0" prefWidth="333.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                        <Label layoutX="14.0" layoutY="76.0" prefHeight="17.0" prefWidth="158.0" text="STOCK INFORMATION" />
+                        <GridPane layoutX="30.0" layoutY="105.0" prefHeight="262.0" prefWidth="313.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="0.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="153.0" minWidth="10.0" prefWidth="128.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="148.0" minWidth="10.0" prefWidth="148.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="103.0" text="STOCK ID:" />
+                              <Label prefHeight="17.0" prefWidth="103.0" text="PRODUCT NAME:" GridPane.rowIndex="1" />
+                              <Label prefHeight="17.0" prefWidth="132.0" text="QUANTTITY:" GridPane.rowIndex="3" />
+                              <Label prefHeight="17.0" prefWidth="133.0" text="PRICE:" GridPane.rowIndex="4" />
+                              <TextField fx:id="txtStockID" editable="false" prefHeight="25.0" prefWidth="78.0" promptText="Click new button:" GridPane.columnIndex="1" />
+                              <TextField fx:id="txtProductName" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextField fx:id="txtStockQuantity" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <Label prefHeight="17.0" prefWidth="103.0" text="PRODUCT CODE:" GridPane.rowIndex="2" />
+                              <TextField fx:id="txtProductCode" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <TextField fx:id="txtProductPrice" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                           </children>
+                        </GridPane>
+                        <Separator layoutX="9.0" layoutY="382.0" prefHeight="4.0" prefWidth="333.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                        <AnchorPane layoutX="1.0" layoutY="386.0" prefHeight="68.0" prefWidth="341.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="6.0" prefHeight="17.0" prefWidth="209.0" text="STOCK REGISTRATION OPTIONS" />
+                              <HBox layoutX="24.0" layoutY="35.0" prefHeight="25.0" prefWidth="313.0" spacing="15.0">
+                                 <children>
+                                    <Button fx:id="btnNew" mnemonicParsing="false" onAction="#handleNew" text="NEW" />
+                                    <Button fx:id="btnEdit" mnemonicParsing="false" onAction="#handleEdit" text="EDIT" />
+                                    <Button fx:id="btnSave" mnemonicParsing="false" onAction="#handleSave" text="SAVE" />
+                                    <Button fx:id="btnDelete" mnemonicParsing="false" onAction="#handleDelete" text="DELETE" />
+                                    <Button fx:id="btnClear" mnemonicParsing="false" onAction="#handleClear" text="CLEAR" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                        <Separator layoutX="1.0" layoutY="465.0" prefHeight="4.0" prefWidth="341.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                        <AnchorPane layoutX="-1.0" layoutY="477.0" prefWidth="343.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="470.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="14.0" prefHeight="17.0" prefWidth="55.0" text="REPORTS" />
+                              <VBox alignment="CENTER" layoutX="23.0" layoutY="31.0" prefHeight="117.0" prefWidth="128.0" spacing="10.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" text="Export to Excel" />
+                                    <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" text="View Report" />
+                                    <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" text="Refresh Table" />
+                                 </children>
+                              </VBox>
+                              <Separator layoutX="169.0" orientation="VERTICAL" prefHeight="164.0" prefWidth="6.0" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="633.0" prefWidth="836.0">
+               <children>
+                  <TableView fx:id="_tableProduct" layoutX="3.0" layoutY="77.0" prefHeight="561.0" prefWidth="209.0">
+                     <columns>
+                        <TableColumn fx:id="_productID" prefWidth="73.0" text="Product ID" />
+                        <TableColumn fx:id="_productName" prefWidth="135.0" text="Product Name" />
+                     </columns>
+                  </TableView>
+                  <Button layoutX="226.0" layoutY="18.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="44.0" text="Button" />
+                  <Button layoutX="282.0" layoutY="17.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="44.0" text="Button" />
+                  <Button layoutX="338.0" layoutY="17.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="44.0" text="Button" />
+                  <JFXTextField fx:id="txtSearchAll" layoutX="397.0" layoutY="25.0" prefHeight="25.0" prefWidth="176.0" promptText="Search All:" />
+                  <TextField fx:id="txtSearchID" layoutX="604.0" layoutY="31.0" prefHeight="25.0" prefWidth="86.0" promptText="Search by ID:" />
+                  <Button fx:id="btnSearchID" layoutX="709.0" layoutY="31.0" mnemonicParsing="false" onAction="#searchById" text="Search" />
+                  <Button fx:id="btnDetails" layoutX="776.0" layoutY="31.0" mnemonicParsing="false" text="Details" />
+                  <JFXTextField fx:id="txtSearchProduct" layoutX="10.0" layoutY="31.0" prefHeight="25.0" prefWidth="195.0" promptText="Search Product:" />
+                  <TableView fx:id="_tableStock" layoutX="226.0" layoutY="77.0" prefHeight="561.0" prefWidth="618.0">
+                    <columns>
+                      <TableColumn fx:id="_stockID" prefWidth="75.0" text="Stock ID" />
+                      <TableColumn fx:id="_stockProductName" prefWidth="144.0" text="Product Name" />
+                        <TableColumn fx:id="_stockProductCode" prefWidth="120.0" text="Product Code" />
+                        <TableColumn fx:id="_stockQuantity" prefWidth="162.0" text="Quantity Available" />
+                        <TableColumn fx:id="_stockProductPrice" prefWidth="116.0" text="Price" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
